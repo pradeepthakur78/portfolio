@@ -1,0 +1,334 @@
+body{
+    background-color: white;
+}
+.nav_container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-flow: row;
+    padding: 1em 5em;
+}
+@media screen and (max-width: 600px){
+    .nav_container{
+        flex-direction: column;
+    }
+    .nav_left{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .nav_right{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .nav_right ul{
+        justify-content: center;
+        align-items: center;
+    }
+    .startproject{
+        flex-direction: column;
+    }
+    .card-text-sub{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.nav_left{
+    width: 60%;
+    font-family: Fira Code;
+    font-weight: 900;
+}
+.nav_right{
+    display: flex;
+    width: 60%;
+}
+.nav_right ul{
+    display: flex;
+    width: 100%;
+    margin-right: 5%;
+    padding: 0;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: end;
+    align-items:flex-end;
+}
+.nav_right li {
+    margin: 10px;
+    font-family: Fira Code;
+    font-size: 20px;
+    cursor: pointer;
+}
+a:link{
+    color: black;
+    text-decoration: none;
+}
+.nav_right li button{
+    color: #7510f7;
+    justify-self: center;
+    background-color: #ffff;
+    border: 2px solid #7510f7;
+    padding: 0.2em 0.2em;
+    border-radius: 20px;
+}
+.nav_right li button:hover{
+    color: #ffff;
+    background-color: #7510f7;
+    border: 2px solid #7510f7;
+}
+.nav_right li button a:hover{
+    color: #ffff;
+    background-color: #7510f7;
+    border: 2px solid #7510f7;
+}
+
+#link1:after {
+    display: block;
+    content: '';
+    border-bottom: solid 3px #7510f7;
+    padding-bottom: 1%;
+    transform: scaleX(0);
+    transition: transform 300ms ease-in-out;
+}
+li:hover:after{
+    transform: scaleX(1);
+}
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    align-items: center;
+}
+.Header-1{
+
+    margin-top: 7em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2.5em;
+    font-family: Fira Code;
+    text-align: center;
+    
+}
+.Header-1 h1{
+    font-style: oblique;
+    font-weight: bolder;
+}
+.Header-1 p{
+    font-weight: 600;
+}
+.h21{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.i1{
+    
+    padding-bottom: 5em;
+}
+.i2 img{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+    align-items: center;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-top: 5em;
+    color: aliceblue;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    text-align: justify;
+    padding-bottom: 10em;
+    background-color: #7510f7;
+}
+.main h2{
+    font-weight: bolder;
+    padding: 0.5em;
+}
+.main p{
+    font-weight: 600;
+}
+.card-container{
+    display: flex;
+    margin-left: 5em;
+    margin-right: 5em;
+    transform: translateY(-100px);
+}
+.x1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.6em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #5BE9B9;
+    border-radius: 60px;
+
+    
+}
+.card{
+    padding: 1em;
+}
+.card-body{
+    text-align: center;
+}
+.card-title{
+    font-weight: bolder;
+}
+.card-text-sub{
+    font-weight: 400;
+    margin-left: 1em;
+    margin-right: 1em;
+    text-align: center;
+}
+.card-text-subtitle{
+    color: #7510f7;
+    padding-top: 1em;
+    text-align: center;
+}
+.card-text-subtext{
+    padding-bottom: 1em;
+    text-align: center;
+}
+.Recent-work-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rws-heading{
+    display: flex;
+    flex-direction: column;
+    padding: 3em;
+    justify-content: center;
+    align-items: center;
+}
+.worksec{
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    justify-content: center;
+    margin-bottom: 10em;
+    gap: 1rem;
+    row-gap: 1rem;
+
+}
+.collabsec{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 1em;
+    margin-bottom: 7em;
+}
+.startproject{
+    display: flex;
+    width: 80%;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-self: center;
+    margin-left: auto;
+    border-radius: 10px;
+    margin-right: auto;
+    transform: translateY(70px);
+    background-color: #141C3A;
+}
+.startproject h2{
+    color: #ffff;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-self: center;
+    font-size: x-large;
+    width: 25%
+}
+.startproject h6{
+    width: 40%;
+    text-align: center;
+    color: #ffff;
+    padding: 1em;
+}
+.startproject button{
+    margin-left: 2em;
+    padding: 0.7em;
+    border-radius: 20px;
+    border: 2px solid #5BE9B9;
+    background-color: #141C3A;
+    color: white;
+}
+.startproject button:hover{
+    background-color: #5BE9B9;
+    color: white;
+}
+footer{
+    background-color: #7510f7;
+    padding: 5em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: aliceblue;
+    font-weight: bold;
+    font-family: Fira Code;
+    
+}
+footer h1{
+    padding: 1em;
+    margin-top: 1em;
+}
+footer h5{
+  padding: 1em;
+}
+footer h8{
+    padding: 1em;
+}
+button{
+    color: #7510f7;
+    justify-self: center;
+    background-color: #ffff;
+    border: 2px solid #7510f7;
+    padding: 0.2em 0.2em;
+    border-radius: 20px;
+}
+button:hover{
+    background-color: #7510f7;
+    color: #ffff;
+}
+button a:hover{
+    color: white;
+}
+.fa {
+        background-color: aliceblue;
+        padding: 20px;
+        font-size: 30px;
+        width: 30px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 250em;
+      
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  .icons{
+    margin: 2em;
+  }
